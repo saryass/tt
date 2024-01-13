@@ -1,0 +1,985 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/**************************************************************/
+/* Row1 */
+/**************************************************************/
+.row1 {
+    /* border: 2px solid red; */
+    width: 1335px;
+    display: flex;
+    /* To allign his elements (container1 & container2)*/
+    margin-bottom: 100px;
+}
+
+/**************************************************************/
+/* Container1 in Row1 */
+/**************************************************************/
+.container1 {
+    /* border:2px solid purple ; */
+    width: 105px;
+    position: fixed;
+}
+
+ul {
+    /* border: 3px solid rgb(228, 231, 36); */
+    background-color: #f2f2f2;
+    height: 100vh;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+ul a {
+    text-decoration: none;
+    color: #001D;
+}
+
+.box {
+    /* border: 1px solid blue; */
+    text-align: center;
+    /*to horizontally center the content inside .box ;)*/
+}
+
+.icon1 {
+    margin: 0 auto;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* the two commented properties can be also used to center horizontally the magnifying instead of using (margin: 0 auto)*/
+
+}
+
+.fa-magnifying-glass {
+    background-color: rgb(157, 228, 204);
+    padding: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.box li {
+    /* background-color:white; */
+    margin-top: 2px;
+    /* to make a space between the text & icon*/
+}
+
+.icon {
+    /* background-color: black; */
+    padding: 8px 22px;
+    border-radius: 15px;
+}
+
+.icon:hover {
+    background-color: #e0dedee5;
+}
+
+/**************************************************************/
+/* Container2 in Row1 */
+/**************************************************************/
+.container2 {
+    /* border: 2px solid rgb(40, 207, 34); */
+    /*....................................*/
+    background: url(https://lh3.googleusercontent.com/2OrUzHCRSI-V46Z1qJBh90usG6OkKwCbXN80FbrjkWoQz4VfoJjNAoQHLHPQRZWH7dI_m5I1gi48h6xMJ5pK6kkdXmUnXPe4VqwvEdo4QeWRjLV9Oew=w2400-rj) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*......................*/
+    border-radius: 20px;
+    margin: 8px 0 0 107px;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 .title {
+    /* border: 1px solid black; */
+    /* background-color: pink; */
+    width: 80%;
+    text-align: center;
+    font-size: 3.58em;
+    font-weight: lighter;
+
+}
+
+.container2 .description {
+    /* border: 1px solid red; */
+    /* background-color: orange; */
+    width: 71.5%;
+    font-size: 1.48em;
+    text-align: center;
+}
+
+.get-started-btn {
+    border: 1px solid rgb(52, 112, 224);
+    width: 225px;
+    height: 78px;
+    border-radius: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(24 90 215);
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-top: 1em;
+    transition: 0.1s;
+}
+
+.get-started-btn:hover {
+    background-color: rgb(42, 96, 197);
+}
+
+/**************************************************************/
+/* Row2 */
+/**************************************************************/
+.row2 {
+    /* border: 2px solid red; */
+    width: 1230px;
+    /* height: 70vh; */
+    margin-left: 105px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    /*To make a space between his elements (container3 & container4)*/
+    margin-bottom: 100px;
+    /* to make a space between row2 and row3 */
+}
+
+/**************************************************************/
+/* Container3 in Row2 */
+/**************************************************************/
+.container3 {
+    /* border: 1px solid black; */
+    width: 97%;
+    align-self: center;
+    /* To align the container at the center of the row horizontally */
+}
+
+.container3 h2 {
+    font-size: 3.6em;
+    padding-left: 20px;
+    font-weight: 450;
+}
+
+/**************************************************************/
+/* Container4 in Row2 */
+/**************************************************************/
+.container4 {
+    /* border: 1px solid black; */
+    width: 97%;
+    align-self: center;
+    /* To align the container at the center of the row horizontally */
+    display: flex;
+    gap: 8px
+        /* to make a space between his elements (element-1,element-2,element-3) */
+}
+
+.element-1 {
+    /* border: 1px solid blue; */
+    background-color: #f7f7f7e5;
+    width: 33.33%;
+    border-radius: 25px;
+    height: 52vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* To make a space between his elements (img, h3, p) */
+    transition: 0.2s;
+}
+
+.element-1:hover {
+    background-color: rgb(167, 221, 255);
+}
+
+.element-1-img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.element-1 h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.element-1 p {
+
+    color: #1f1f1f;
+    line-height: 1.4;
+}
+
+.element-1 h3,
+p {
+    padding-left: 20px;
+}
+
+/***************************************/
+.element-2 {
+    /* border: 1px solid blue; */
+    background-color: #f7f7f7e5;
+    width: 33.33%;
+    border-radius: 25px;
+    height: 52vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* To make a space between his elements (img, h3, p) */
+    transition: 0.2s;
+}
+
+.element-2:hover {
+    background-color: rgb(167, 221, 255);
+}
+
+.element-2-img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.element-2 h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.element-2 p {
+
+    color: #1f1f1f;
+    line-height: 1.4;
+}
+
+.element-2 h3,
+p {
+    padding-left: 20px;
+}
+
+/***************************************/
+.element-3 {
+    /* border: 1px solid blue; */
+    background-color: #f7f7f7e5;
+    width: 33.33%;
+    border-radius: 25px;
+    height: 52vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* To make a space between his elements (img, h3, p) */
+    transition: 0.2s;
+}
+
+.element-3:hover {
+    background-color: rgb(167, 221, 255);
+}
+
+.element-3-img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.element-3 h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.element-3 p {
+
+    color: #1f1f1f;
+    line-height: 1.4;
+}
+
+.element-3 h3,
+p {
+    padding-left: 20px;
+}
+
+/**************************************************************/
+/* Row 3*/
+/**************************************************************/
+.row3 {
+    /* border: 2px solid red; */
+    width: 1230px;
+    margin-left: 105px;
+    margin-bottom: 20px;
+    /* height: 40vh; */
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    /*To make a space between his elements (container5 & container6)*/
+    margin-bottom: 8px;
+    /* to make a space between row3 and row4 */
+}
+
+/**************************************************************/
+/* Container 5 in Row 3*/
+/**************************************************************/
+.container5 {
+    /* border: 1px solid black; */
+    width: 97%;
+    align-self: center;
+    /* To align the container at the center of the row horizontally */
+}
+
+.container5 h2 {
+    font-size: 3.6em;
+    padding-left: 20px;
+    font-weight: 450;
+}
+
+/**************************************************************/
+/* Container 6 in Row 3*/
+/**************************************************************/
+.container6 {
+    /* border: 1px solid black; */
+    width: 97%;
+    align-self: center;
+    /* To align the container at the center of the row horizontally */
+    display: flex;
+    gap: 8px;
+    /* to make a space between his elements (element-1,element-2,element-3) */
+}
+
+.element-A {
+    /* border: 1px solid blue; */
+    background-color: #f7f7f7e5;
+    width: 33.33%;
+    border-radius: 25px;
+    height: 52vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* To make a space between his elements (img, h3, p) */
+    transition: 0.2s;
+}
+
+.element-A:hover {
+    background-color: rgb(167, 221, 255);
+}
+
+.element-A-img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.element-A h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.element-A p {
+
+    color: #1f1f1f;
+    line-height: 1.4;
+}
+
+.element-A h3,
+p {
+    padding-left: 20px;
+}
+
+/*****************************************/
+.element-B {
+    /* border: 1px solid blue; */
+    background-color: #f7f7f7e5;
+    width: 33.33%;
+    border-radius: 25px;
+    height: 52vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* To make a space between his elements (img, h3, p) */
+    transition: 0.2s;
+}
+
+.element-B:hover {
+    background-color: rgb(167, 221, 255);
+}
+
+.element-B-img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.element-B h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.element-B p {
+
+    color: #1f1f1f;
+    line-height: 1.4;
+}
+
+.element-B h3,
+p {
+    padding-left: 20px;
+}
+
+/*****************************************/
+.element-C {
+    /* border: 1px solid blue; */
+    background-color: #f7f7f7e5;
+    width: 33.33%;
+    border-radius: 25px;
+    height: 52vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* To make a space between his elements (img, h3, p) */
+    transition: 0.2s;
+}
+
+.element-C:hover {
+    background-color: rgb(167, 221, 255);
+}
+
+.element-C-img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.element-C h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.element-B p {
+
+    color: #1f1f1f;
+    line-height: 1.4;
+}
+
+.element-C h3,
+p {
+    padding-left: 20px;
+}
+
+/**************************************************************/
+/*Row 4*/
+/**************************************************************/
+.row4 {
+    /* border: 2px solid red; */
+    width: 1230px;
+    margin-left: 105px;
+    display: flex;
+    justify-content: center;
+    /*to align container7 centered horizontally inside row 4.. VERY IMP TO UNDERSTAND ..if you notice for other containers to be alligned centered horizontally in their row i used (align-self:center) because the row had more than one container and i used (display:flex , flex-direction:column) for the rows.. but in row 4 since we have only one container which is container7. so to align it centered horizontally inside the row we just used (display:dlex, justify-contanet:center) for the row ;)*/
+    margin-bottom: 100px;
+    /* to make a space between row 4 and row 5 */
+}
+
+/**************************************************************/
+/* Container7 in Row 4*/
+/**************************************************************/
+.container7 {
+    /* border: 1px solid black; */
+    width: 97%;
+    display: flex;
+    gap: 8px;
+    /* to make a space between his elements (element-1,element-2,element-3) */
+}
+
+.element-D {
+    /* border: 1px solid blue; */
+    background-color: #f7f7f7e5;
+    width: 33.33%;
+    border-radius: 25px;
+    height: 52vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* To make a space between his elements (img, h3, p) */
+    transition: 0.2s;
+}
+
+.element-D:hover {
+    background-color: rgb(167, 221, 255);
+}
+
+.element-D-img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.element-D h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.element-D p {
+    color: #1f1f1f;
+    line-height: 1.4;
+}
+
+.element-D h3,
+p {
+    padding-left: 20px;
+}
+
+/*************************************************/
+.element-E {
+    /* border: 1px solid blue; */
+    background-color: #f7f7f7e5;
+    width: 33.33%;
+    border-radius: 25px;
+    height: 52vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* To make a space between his elements (img, h3, p) */
+    transition: 0.2s;
+}
+
+.element-E:hover {
+    background-color: rgb(167, 221, 255);
+}
+
+.element-E-img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.element-D h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.element-E p {
+    color: #1f1f1f;
+    line-height: 1.4;
+}
+
+.element-E h3,
+p {
+    padding-left: 20px;
+}
+
+/*******************************************/
+.element-F {
+    /* border: 1px solid blue; */
+    background-color: #f7f7f7e5;
+    width: 33.33%;
+    border-radius: 25px;
+    height: 52vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* To make a space between his elements (img, h3, p) */
+    transition: 0.2s;
+}
+
+.element-F:hover {
+    background-color: rgb(167, 221, 255);
+}
+
+.element-F-img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.element-F h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.element-F p {
+    color: #1f1f1f;
+    line-height: 1.4;
+}
+
+.element-F h3,
+p {
+    padding-left: 20px;
+}
+
+/**************************************************************/
+/* Row 5*/
+/**************************************************************/
+.row5 {
+    /* border: 2px solid red; */
+    width: 1230px;
+    margin-left: 105px;
+    /* height: 40vh; */
+    display: flex;
+    flex-direction: column;
+    /* to align his elemets (container8 , container9, and container10) */
+    margin-bottom: 100px;
+    /* to make a space between row5 and row6 */
+}
+
+/**************************************************************/
+/* Container8 in Row 5*/
+/**************************************************************/
+.container8 {
+    /* border: 1px solid black; */
+    width: 97%;
+    align-self: center;
+    margin-bottom: 18px;
+    /* to make a space between container8 and container9 */
+}
+
+.container8 h2 {
+    font-size: 3.6em;
+    padding-left: 20px;
+    font-weight: 450;
+}
+
+/**************************************************************/
+/* Container9 in Row 5*/
+/**************************************************************/
+.container9 {
+    /* border: 1px solid black; */
+    width: 97%;
+    align-self: center;
+    /* To align the container at the center of the row horizontally */
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 8px;
+    height: 125px;
+    margin-bottom: 8px;
+    /*to make a space between container 9 & 10 */
+}
+
+.element-9a {
+    /* border: 1px solid black; */
+    background-color: #f7f7f7e5;
+    width: 50%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* to allign his elements (title-9a & description-9a) */
+    gap: 12px;
+    /* to make a vertical space between his elements (title-9a & description-9a) */
+    transition: 0.2s;
+}
+
+.element-9a:hover {
+    background-color: rgb(167, 221, 255);
+}
+
+.element-9b {
+    /* border: 1px solid black; */
+    background-color: #f7f7f7e5;
+    width: 50%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* to allign his elements (title-9a & description-9a) */
+    gap: 12px;
+    /* to make a vertical space between his elements (title-9a & description-9a) */
+    transition: 0.2s;
+}
+
+.element-9b:hover {
+    background-color: rgb(167, 221, 255);
+}
+
+.title-9a,
+.description-9a,
+.title-9b,
+.description-9b {
+    padding-left: 20px;
+    color: #1f1f1f;
+}
+
+.title-9a h3 {
+    font-size: 1.6em;
+    font-weight: 400;
+}
+
+.title-9b h3 {
+    font-size: 1.6em;
+    font-weight: 400;
+}
+
+/**************************************************************/
+/* Container10 in Row 5*/
+/**************************************************************/
+.container10 {
+    /* border: 1px solid black; */
+    width: 97%;
+    align-self: center;
+    /* To align the container at the center of the row horizontally */
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 8px;
+    height: 125px;
+}
+
+.element-10a {
+    /* border: 1px solid black; */
+    background-color: #f7f7f7e5;
+    width: 50%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* to allign his elements (title-9a & description-9a) */
+    gap: 12px;
+    /* to make a vertical space between his elements (title-9a & description-9a) */
+    transition: 0.2s;
+}
+
+.element-10a:hover {
+    background-color: rgb(167, 221, 255);
+}
+
+.element-10b {
+    /* border: 1px solid black; */
+    background-color: #f7f7f7e5;
+    width: 50%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* to allign his elements (title-9a & description-9a) */
+    gap: 12px;
+    /* to make a vertical space between his elements (title-9a & description-9a) */
+    transition: 0.2s;
+}
+
+.element-10b:hover {
+    background-color: rgb(167, 221, 255);
+}
+
+.title-10a,
+.description-10a,
+.title-10b,
+.description-10b {
+    padding-left: 20px;
+    color: #1f1f1f;
+}
+
+.title-10a h3 {
+    font-size: 1.6em;
+    font-weight: 400;
+}
+
+.title-10b h3 {
+    font-size: 1.6em;
+    font-weight: 400;
+}
+/**************************************************************/
+/* Row 6*/
+/**************************************************************/
+.row6 {
+    /* border: 2px solid red; */
+    width: 1230px;
+    margin-left: 105px;
+    display: flex;
+    justify-content: center;
+    border-top: 3px dashed #d3cdcde5;
+    padding-top: 80px;
+}
+/**************************************************************/
+/*Container11 in Row 6*/
+/**************************************************************/
+.container11 {
+    /* border:1px solid black; */
+    width:97%;
+    display: flex;
+    /* to align his elements (Container11-paragraph & container11-three-nav) */
+}
+/**************************************************************/
+/*Container11-paragraph inside container 11-  Row 6*/
+/**************************************************************/
+.container11-paragraph-logo {
+    /* border: 1px solid black; */
+    width: 48%;
+}
+.paragraph,.logo {
+    padding-left: 20px;
+}
+.logo {
+    /* background-color: orangered; */
+    margin-bottom: 24px;
+    /* to make a vertical space between logo and paragraph */
+}
+
+.paragraph {
+    /* background-color: greenyellow; */
+    font-size: 1em;
+    line-height: 1.4;
+    color:#1f1f1f;
+    font-weight: 400;
+}
+/**************************************************************/
+/*Container11-three-nav  inside container 11-  Row 6*/
+/**************************************************************/
+.container11-three-nav { 
+    /* border: 1px solid black; */
+    width:45%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.three-nav-1 {
+    /* border:1px solid black; */
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.three-nav-2 {
+    /* border:1px solid black; */
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.three-nav-3 {
+    /* border:1px solid black; */
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.three-nav-a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: rgb(52, 112, 224);
+    transition: 0.1s;
+}
+
+.three-nav-a:hover {
+    color: #1f1f1f;
+    text-decoration: underline;
+}
+
+.three-nav {
+    font-size: 0.9rem;
+    font-weight: lighter;
+    color: #1f1f1f;
+}
+/**************************************************************/
+/* Row 7*/
+/**************************************************************/
+.row7 {
+    /* border:2px solid red; */
+    width: 1230px;
+    padding-left: 105px;
+    display: flex;
+    justify-content: center;
+    /* to allign his element (footer) at the center of the row */
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+/**************************************************************/
+/* Footer inside Row 7*/
+/**************************************************************/
+.footer {
+    /* border:1px solid black; */
+    width: 97%;
+}
+
+.footer a {
+    /* background-color: yellow; */
+    text-decoration: none;
+    color: #1f1f1f;
+    margin-right: 20px;
+    /*To make a space between the footer elements ;)*/
+}
+
+.footer span {
+    font-size: 1.5em;
+    font-weight: 600;
+    padding-left: 20px;
+    /*to aliign vertically with other sections' text ;) */
+}
+
+.footer a:not(:first-child) {
+    font-size: 1.05em;
+}
+
+.footer a:not(:first-child):hover {
+    text-decoration: underline;
+}
+/*3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333*/
+/*3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333*/
+/*3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333*/
+
+/* MOBILE VERSION */
+@media only screen and (max-width:480px) {
+
+    /**************************************************************/
+/* Row1 */
+/**************************************************************/
+.row1 {
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    /* To allign his elements (container1 & container2)*/
+    margin-bottom: 100px;
+}
+
+/**************************************************************/
+/* Container1 in Row1 */
+/**************************************************************/
+.row1 {
+    width: 100%;
+}
+
+ul {
+    display: none;
+}
+
+/**************************************************************/
+/* Container2 in Row1 */
+/**************************************************************/
+.container2 {
+    height: auto;
+   width: 70%;
+    margin-left: 0;
+}
+
+.container2 .title {
+    border: 1px solid black;
+    font-size: 1em;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.container2 .description {
+    border: 1px solid red;
+    line-height: 1.2;
+    font-size: 0.6em;
+
+}
+
+.get-started-btn {
+    border: 1px solid rgb(52, 112, 224);
+    width: 225px;
+    height: 78px;
+    border-radius: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(24 90 215);
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-top: 1em;
+    transition: 0.1s;
+}
+
+.get-started-btn:hover {
+    background-color: rgb(42, 96, 197);
+}
+}
